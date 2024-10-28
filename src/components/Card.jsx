@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Card = ({ title, image, desc, price, func }) => {
+const Card = ({ title, image, desc, price, func, buttonText }) => {
     function singleProductPage(){
         const navigate = useNavigate()
     }
@@ -15,9 +15,9 @@ const Card = ({ title, image, desc, price, func }) => {
         <div className="card-body">
           <h2 className="card-title text-2xl">Rs: {price}</h2>
           <h2 className="card-title">{title}</h2>
-          <p className="text-lg leading-5 my-2">{desc}...</p>
+          <p className="text-lg leading-5 my-2">{desc}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary" onClick={func}>Show More</button>
+            <button className="btn btn-primary" onClick={func}>{buttonText}</button>
           </div>
         </div>
       </div>
