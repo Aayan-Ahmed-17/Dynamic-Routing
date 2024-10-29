@@ -14,9 +14,6 @@ const Navbar = () => {
       <h2 className="hover:text-gray-300 hover:underline">
         <Link to={"product"}>Product</Link>
       </h2>
-      <h2 className="hover:text-gray-300 hover:underline">
-        <Link to={"products"}>Products</Link>
-      </h2>
     </div>
   );
 };
