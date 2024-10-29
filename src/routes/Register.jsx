@@ -4,7 +4,7 @@ import Form from '../components/Form'
 const Register = () => {
   return (
     <>
-      <Form name={"Register Now!"}/>
+      <Form name={"Register Now!"} showConfirmPassword={true}/>
     </>
   )
 }
